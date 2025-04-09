@@ -1,0 +1,345 @@
+#img1 {
+    width: 250px;
+    height: 200px;
+}
+
+#img2{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+}
+
+#img3{
+    width: 360px;
+    height: auto;
+    border-radius: 30px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header{
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(34, 34, 34);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > div:nth-child(2){
+    color: white;
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 900;
+    box-sizing: border-box;
+
+}
+
+nav{
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    place-content: center center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+nav > a{
+    height: stretch;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    font-weight: 900;
+    background-color: yellow;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+nav > a:hover{
+    animation-name: zoomin;
+    animation-duration: 2s;
+    animation-delay: 0.1s;
+    transition-timing-function: cubic-bezier(0,1,0,1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoomin{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+#outer {
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: rgb(34, 34, 34);
+    width: 1400px;
+    padding: 100px;
+}
+
+section {
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: rgb(55, 55, 55);
+    padding: 100px;
+    margin: 30px;
+}
+
+section:nth-child(1){
+    margin-top: 0px;
+}
+
+section:nth-child(4){
+    margin-bottom: 0px;
+}
+
+#Main{
+    display: grid;
+    grid-template-rows: 2fr 0.5fr;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    place-content: center center;
+}
+
+#Main > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Main > div:nth-child(2){
+    grid-row: span 2;
+    background-color: rgb(130, 130, 130);
+    border-radius: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    font-size: large;
+    padding: 10%;
+    text-align: center;
+}
+
+.table1{
+    border: 1px solid rgb(130, 130, 130);
+    border-radius: 30px;
+    background-color: rgb(130, 130, 130);
+}
+
+#Exercises{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 항상 3칸 유지 */
+    gap: 30px;
+    place-content: center center;
+}
+
+#Exercises > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(130, 130, 130);
+    border-radius: 30px;
+    height: 80px;
+}
+
+#Exercises > div:nth-child(1){
+    grid-column: span 3;
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+#Exercises > div:nth-child(2){
+    font-size: 1.5em;
+    font-weight: 800;
+}
+#Exercises > div:nth-child(3){
+    font-size: 1.5em;
+    font-weight: 800;
+}
+#Exercises > div:nth-child(4){
+    font-size: 1.5em;
+    font-weight: 800;
+}
+#Exercises > div:nth-child(8){
+    font-size: 1.5em;
+    font-weight: 800;
+}
+#Exercises > div:nth-child(9){
+    font-size: 1.5em;
+    font-weight: 800;
+}
+#Exercises > div:nth-child(10){
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+#Exercises > div:nth-child(5){
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+#Exercises > div:nth-child(6){
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+#Exercises > div:nth-child(7){
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+#Exercises > div:nth-child(11){
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+#Exercises > div:nth-child(12){
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+#Exercises > div:nth-child(12){
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+#Exercises > div:nth-child(13){
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#Nutrition{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    place-content: center center;
+}
+
+#Nutrition > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(130, 130, 130);
+    border-radius: 30px;
+    height: 80px;
+}
+
+#Nutrition > div:nth-child(1){
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+#Nutrition > div:nth-child(2){
+    height: 800px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    place-content: center center;
+    place-items: center center;
+    gap: 30px;
+}
+
+#Nutrition > div:nth-child(2) > div{
+    background-color: rgb(194, 194, 194);
+    border-radius: 30px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Nutrition > div:nth-child(2) > div:nth-child(odd):not(div:nth-child(13)){
+    width: 200px;
+    font-weight: 800;
+}
+
+#Nutrition > div:nth-child(2) > div:nth-child(even){
+    width: 600px;
+}
+
+#Nutrition > div:nth-child(2) > div:nth-child(13){
+    grid-column: span 2;
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="submit"] {
+    all: unset;
+    text-align: center;
+    width: 100%;
+}
+
+#division{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+label{
+    margin: 10px;
+}
+
+footer{
+    font-size: 0.8em;
+    color: gray;
+}
+
+footer >div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.sns-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.sns-box img {
+    width: 25px;
+    height: 25px;
+}
+
+#img2:hover {
+    /* cursor: pointer; */
+    animation-name: haku;
+    animation-duration: 2s;
+    animation-delay: 0.1s;
+    animation-iteration-count: infinite;
+}
+/* 
+@keyframes haku{
+    0%{transform: scale(1,1);}
+    25%{transform: scale(1.25,0.75);}
+    50%{transform: scale(0.75,1.25);}
+    75%{transform: scale(1.15,0.85);}
+    100%{transform: scale(1,1);}
+} */
